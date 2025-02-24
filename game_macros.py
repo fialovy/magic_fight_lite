@@ -19,6 +19,11 @@ DEFAULT_SPECIAL_ABILITY_TURNS = (
 ## but now...at least you don't have to install mypy. Or literally anything.
 ## ...that's the hope...
 
+
+SpellChoice = namedtuple("SpellChoice", ["dimension", "hit"])
+SpecialChoice = namedtuple("SpecialChoice", ["description", "effect"])
+
+
 ## ...anyway, next comes: General helper utils
 
 

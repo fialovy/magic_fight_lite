@@ -9,7 +9,6 @@ from game_macros import (
     OPPONENT_SPECIAL_ABILITY_CHANCE,
     SpecialChoice,
     SpellChoice,
-    SpellDimension,
     confirm_input_choice,
     did_it_happen,
     get_input_choice,
@@ -21,6 +20,8 @@ class Game:
     def __init__(self):
         self.player = None
         self.opponent = None
+        self.all_characters = {}
+
         for name in os.listdir(f"{CHARACTERS_DIR}"):
             character = Character(name=name.title())
             self.all_characters[name] = character

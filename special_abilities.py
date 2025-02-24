@@ -4,7 +4,7 @@ import random
 import sys
 import time
 
-from character import Character, CharacterMagicInfo
+from character import Character
 from game_macros import CHARACTERS_DIR, DEFAULT_SPECIAL_ABILITY_TURNS, did_it_happen
 
 

@@ -6,10 +6,6 @@ import time
 from game_macros import (
     CHARACTERS_DIR,
     GAME_LIFE,
-    CharacterMagicInfo,
-    CharacterReactions,
-    CharacterSpecialAbilitiesInfo,
-    CharacterTaunts,
     SpecialChoice,
     SpellChoice,
     did_it_happen,
@@ -143,5 +139,5 @@ class Character:
 
         affected_phrase = f"{self.name} has" if is_computer else "You have"
         affector_phrase = "your" if is_computer else f"{opponent_name}'s"
-        print(f"{affected_phrase} recovered from {affector_phrase} magical effect!")
+        print(f"{affected_phrase} recovered from {affector_phrase} magical effect!\n")
         time.sleep(1)
